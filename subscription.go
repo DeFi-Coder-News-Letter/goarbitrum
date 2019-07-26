@@ -34,7 +34,7 @@ func (conn *ArbConnection) SubscribeFilterLogs(
 	return newSubscription(conn, query, ch), nil
 }
 
-const subscriptionPollingInterval = 5*time.Second
+const subscriptionPollingInterval = 1*time.Second
 
 type subscription struct {
 	proxy            ValidatorProxy
